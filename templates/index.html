@@ -9,6 +9,7 @@
   {% if error %}
     <p style="color: red;">{{ error }}</p>
   {% endif %}
+  <h2>Submission</h2>
   <form action="/fetch-file" method="get">
     <label for="path">Enter file path:</label>
     <input type="text" id="path" name="path" required>

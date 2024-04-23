@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Fetcher</title>
+</head>
+<body>
+  <h1>Fetch a File from the Sidecar</h1>
+  {% if error %}
+    <p style="color: red;">{{ error }}</p>
+  {% endif %}
+  <form action="/fetch-file" method="get">
+    <label for="path">Enter file path:</label>
+    <input type="text" id="path" name="path" required>
+    <button type="submit">Fetch File</button>
+  </form>
+</body>
+</html>

@@ -1,3 +1,10 @@
+# Get Started
+
+- `python3 -m venv venv`
+- `source venv/bin/activate`
+- `pip install -r requirements.txt`
+- `python app.py`
+
 # swagger-client
 This is a sample API written to become a Sidecar leveraging the Gin Go framework.
 

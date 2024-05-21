@@ -15,5 +15,18 @@
     <input type="text" id="path" name="path" required>
     <button type="submit">Fetch File</button>
   </form>
+  <h2>Health Check</h2>
+  <form action="/health-check" method="get">
+    <button type="submit">Run Health Check</button>
+    <br /><br />
+    <div>
+      <label>Result:</label>
+      <span>{{ health_check_result }}</span>
+    </div>
+    <div>
+      <label>Execution Time (ms):</label>
+      <span>{{ execution_time_ms }}</span>
+    </div>
+  </form>
 </body>
 </html>
